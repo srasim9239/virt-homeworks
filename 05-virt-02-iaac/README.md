@@ -31,7 +31,21 @@
 - Vagrant
 - Ansible
 
-*Приложить вывод команд установленных версий каждой из программ, оформленный в markdown.*
+ОТвет:  
+```
+ ras@ras-VirtualBox  ~  vboxmanage --version
+6.1.26_Ubuntur145957
+ ras@ras-VirtualBox  ~  vagrant -v
+Vagrant 2.2.6
+ ✘ ras@ras-VirtualBox  ~  ansible --version
+ansible 2.9.6
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/ras/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0]
+```
+
 
 ## Задача 4 (*)
 
@@ -41,4 +55,9 @@
 - Зайти внутрь ВМ, убедиться, что Docker установлен с помощью команды
 ```
 docker ps
+```
+Ответ:  
+```
+vagrant@vagrant:~$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
